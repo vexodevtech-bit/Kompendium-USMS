@@ -460,24 +460,6 @@ main {
   white-space: nowrap;
 }
 
-.code-pill.urgent {
-  color: #fca5a5;
-  background: rgba(239, 68, 68, 0.14);
-  border-color: rgba(239, 68, 68, 0.35);
-}
-
-.code-pill.warn {
-  color: #fde047;
-  background: rgba(234, 179, 8, 0.14);
-  border-color: rgba(234, 179, 8, 0.35);
-}
-
-.code-pill.gold {
-  color: #fde047;
-  background: rgba(234, 179, 8, 0.12);
-  border-color: rgba(234, 179, 8, 0.3);
-}
-
 .tag {
   font-size: 11px;
   font-weight: 600;
@@ -610,7 +592,7 @@ main {
 .site-footer {
   background: var(--panel);
   border-top: 1px solid var(--border);
-  padding: 22px 24px;
+  padding: 28px 24px;
   text-align: center;
   font-size: 13.5px;
   color: var(--text-muted);
@@ -619,6 +601,14 @@ main {
 .site-footer strong {
   color: var(--text);
   font-weight: 600;
+}
+
+.footer-legal {
+  max-width: 820px;
+  margin: 12px auto 0;
+  font-size: 12px;
+  color: #6e7681;
+  line-height: 1.5;
 }
 
 .backtop {
@@ -852,10 +842,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <input type="search" id="searchInput" placeholder="Szukaj w kompendium (np. 10-80, Code 6F, FTS, TCCC, Miranda)...">
     </div>
     <div class="filter-tabs" id="filterTabs">
-      <button type="button" class="filter-btn active" data-filter="all">Wszystkie (22)</button>
+      <button type="button" class="filter-btn active" data-filter="all">Wszystkie (26)</button>
       <button type="button" class="filter-btn" data-filter="org">Struktura i Zarząd</button>
       <button type="button" class="filter-btn" data-filter="training">Szkolenia i Sprzęt</button>
-      <button type="button" class="filter-btn" data-filter="comms">Radio i Słownik</button>
+      <button type="button" class="filter-btn" data-filter="comms">Radio, Prawo i Słownik</button>
       <button type="button" class="filter-btn" data-filter="tactics">Procedury Terenowe</button>
     </div>
   </div>
@@ -888,6 +878,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <a class="nav-link" href="#sec-20">SEKCJA 20: Manewry pościgowe</a>
         <a class="nav-link" href="#sec-21">SEKCJA 21: Procedury zatrzymania</a>
         <a class="nav-link" href="#sec-22">SEKCJA 22: Procedury konwojowe</a>
+        <a class="nav-link" href="#sec-23">SEKCJA 23: Procedury podczas napadu</a>
+        <a class="nav-link" href="#sec-24">SEKCJA 24: Prawo Stanowe</a>
+        <a class="nav-link" href="#sec-25">SEKCJA 25: Narkotyki</a>
+        <a class="nav-link" href="#sec-26">SEKCJA 26: Konwoje i sekcja więzienna</a>
       </nav>
     </aside>
 
@@ -968,19 +962,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 <tbody>
                   <tr>
                     <td><strong>General Director of USMS</strong></td>
-                    <td><span class="code-pill gold">00</span> William Hawthorne</td>
+                    <td><span class="code-pill">00</span> William Hawthorne</td>
                   </tr>
                   <tr>
                     <td><strong>Chief of U.S. Marshal</strong></td>
-                    <td><span class="code-pill gold">01</span> Wade Hawthorne</td>
+                    <td><span class="code-pill">01</span> Wade Hawthorne</td>
                   </tr>
                   <tr>
                     <td><strong>Assistant Chief of U.S. Marshal</strong></td>
-                    <td><span class="code-pill gold">02</span> Leonardo Pattini</td>
+                    <td><span class="code-pill">02</span> Leonardo Pattini</td>
                   </tr>
                   <tr>
                     <td><strong>Deputy Chief of U.S. Marshal</strong></td>
-                    <td><span class="code-pill gold">03</span> Franz Richter</td>
+                    <td><span class="code-pill">03</span> Franz Richter</td>
                   </tr>
                   <tr>
                     <td><strong>District Commander</strong></td>
@@ -1042,19 +1036,19 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="card-body">
             <div class="grid-2">
               <div class="info-panel">
-                <h4>(I.A.D) Internal Affairs Division <span class="code-pill gold">Chief: Benjamin Phundra</span></h4>
+                <h4>(I.A.D) Internal Affairs Division <span class="code-pill">Chief: Benjamin Phundra</span></h4>
                 <p>Internal Affairs Division to jednostka zajmująca się nadzorem działań funkcjonariuszy USMS. Odpowiada za kontrolowanie prawidłowości wykonywania obowiązków służbowych, analizę raportów oraz weryfikację skarg. Prowadzi postępowania wobec osób podejrzanych o naruszenie regulaminu lub nadużycia uprawnień.</p>
               </div>
               <div class="info-panel">
-                <h4>(S.O.G.) Special Operations Group <span class="code-pill gold">SOG Commander: James Slade</span></h4>
+                <h4>(S.O.G.) Special Operations Group <span class="code-pill">SOG Commander: James Slade</span></h4>
                 <p>Special Operations Group to wyspecjalizowana jednostka taktyczna realizująca zadania podwyższonego ryzyka. Działa w sytuacjach wymagających szybkiej reakcji, wysokiej precyzji i ścisłej koordynacji zespołowej. Odpowiada za zatrzymania niebezpiecznych osób oraz wsparcie operacji w warunkach wysokiego zagrożenia.</p>
               </div>
               <div class="info-panel">
-                <h4>(C.I.D.) Criminal Investigation Division <span class="code-pill warn">CID Commander: Utajnione</span></h4>
+                <h4>(C.I.D.) Criminal Investigation Division <span class="code-pill">CID Commander: Utajnione</span></h4>
                 <p>Criminal Investigation Division to wyspecjalizowane biuro śledcze działające w strukturach United States Marshals Service. Jednostka została powołana w celu prowadzenia zaawansowanych, wieloetapowych postępowań federalnych wymagających pracy operacyjnej, analizy wywiadowczej oraz koordynacji międzyagencyjnej.</p>
               </div>
               <div class="info-panel">
-                <h4>(F.T.D.) Field Training Division <span class="code-pill gold">FTD Commander: Rosanne Murphy</span></h4>
+                <h4>(F.T.D.) Field Training Division <span class="code-pill">FTD Commander: Rosanne Murphy</span></h4>
                 <p>Field Training Division ma na celu prowadzenie naboru kandydatów w szeregi USMS, szkolenie rekrutów oraz doskonalenie funkcjonariuszy w zakresie obowiązków i właściwego postępowania. Umożliwia rozwój agentów poprzez organizację szkoleń pozwalających na poszerzenie kompetencji.</p>
               </div>
             </div>
@@ -1071,16 +1065,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h4>§1. Zakaz dyskryminacji i nękania</h4>
                 <p>Pracownikom zabrania się dyskryminowania, nękania lub odwetu wobec innych z powodu statusu ochronnego. Status ochronny obejmuje:</p>
                 <ul class="tac-list">
-                  <li>1. Wiek &nbsp;|&nbsp; 2. Pochodzenie &nbsp;|&nbsp; 3. Kolor skóry &nbsp;|&nbsp; 4. Niepełnosprawność</li>
-                  <li>5. Stan cywilny &nbsp;|&nbsp; 6. Stan medyczny &nbsp;|&nbsp; 7. Rasę &nbsp;|&nbsp; 8. Religię</li>
+                  <li>Wiek</li>
+                  <li>Pochodzenie</li>
+                  <li>Kolor skóry</li>
+                  <li>Niepełnosprawność</li>
+                  <li>Stan cywilny</li>
+                  <li>Stan medyczny</li>
+                  <li>Rasę</li>
+                  <li>Religię</li>
                 </ul>
               </div>
               <div class="info-panel">
                 <h4>§2. Oddawanie honorów służbowych</h4>
                 <p>Szacunek okazujemy wyższym stopniem poprzez salut. Wyjątek: High Command. Nie salutujemy gdy:</p>
                 <ul class="tac-list">
-                  <li>Spożywamy posiłek lub pomagamy rannemu</li>
-                  <li>Podczas biegów szkoleniowych lub podczas strzelaniny</li>
+                  <li>Spożywamy posiłek</li>
+                  <li>Pomagamy rannemu</li>
+                  <li>Podczas biegów szkoleniowych</li>
+                  <li>Podczas strzelaniny</li>
                   <li>Ktoś nie jest w mundurze</li>
                   <li>Przełożony prowadzi pojazd lub siedzi w nim</li>
                   <li>Stoimy za szybą lub innym przedmiotem zasłaniającym</li>
@@ -1298,29 +1300,44 @@ document.addEventListener('DOMContentLoaded', () => {
               <div class="info-panel">
                 <h4>Obowiązkowe wyposażenie funkcjonariusza</h4>
                 <label class="check-item"><input type="checkbox"><span>Broń palna służbowa klasy B (USP, Combat Pistol)</span></label>
-                <label class="check-item"><input type="checkbox"><span>Magazynki do broni klasy B (Maks. 96 + 12 w magazynku)</span></label>
-                <label class="check-item"><input type="checkbox"><span>Tazer, Pałka teleskopowa</span></label>
+                <label class="check-item"><input type="checkbox"><span>Magazynki do broni klasy B (Maksymalnie 96 amunicji + 12 w magazynku)</span></label>
+                <label class="check-item"><input type="checkbox"><span>Tazer</span></label>
+                <label class="check-item"><input type="checkbox"><span>Pałka teleskopowa</span></label>
                 <label class="check-item"><input type="checkbox"><span>1 para kajdanek</span></label>
-                <label class="check-item"><input type="checkbox"><span>Radio, Nadajnik GPS, Bodycam</span></label>
-                <label class="check-item"><input type="checkbox"><span>Staza Taktyczna, IFAK, Latarka</span></label>
-                <label class="check-item"><input type="checkbox"><span>Kamizelka kuloodporna, Mundur, Odznaka, Pas taktyczny</span></label>
+                <label class="check-item"><input type="checkbox"><span>Radio</span></label>
+                <label class="check-item"><input type="checkbox"><span>Nadajnik GPS</span></label>
+                <label class="check-item"><input type="checkbox"><span>Bodycam</span></label>
+                <label class="check-item"><input type="checkbox"><span>Staza Taktyczna</span></label>
+                <label class="check-item"><input type="checkbox"><span>IFAK</span></label>
+                <label class="check-item"><input type="checkbox"><span>Latarka</span></label>
+                <label class="check-item"><input type="checkbox"><span>Kamizelka kuloodporna</span></label>
+                <label class="check-item"><input type="checkbox"><span>Mundur</span></label>
+                <label class="check-item"><input type="checkbox"><span>Odznaka</span></label>
+                <label class="check-item"><input type="checkbox"><span>Pas taktyczny</span></label>
               </div>
 
               <div class="info-panel">
                 <h4>Wyposażenie radiowozu</h4>
                 <label class="check-item"><input type="checkbox"><span>Komputer pokładowy</span></label>
                 <label class="check-item"><input type="checkbox"><span>Apteczka / Torba R0</span></label>
-                <label class="check-item"><input type="checkbox"><span>Alkomat, Rękawiczki</span></label>
-                <label class="check-item"><input type="checkbox"><span>Barierki, Pachołki, Kolczatki</span></label>
-                <label class="check-item"><input type="checkbox"><span>Belka świetlna (nie zawsze), Sygnalizacja świetlna</span></label>
+                <label class="check-item"><input type="checkbox"><span>Alkomat</span></label>
+                <label class="check-item"><input type="checkbox"><span>Rękawiczki</span></label>
+                <label class="check-item"><input type="checkbox"><span>Barierki</span></label>
+                <label class="check-item"><input type="checkbox"><span>Pachołki</span></label>
+                <label class="check-item"><input type="checkbox"><span>Kolczatki</span></label>
+                <label class="check-item"><input type="checkbox"><span>Belka świetlna (nie zawsze)</span></label>
+                <label class="check-item"><input type="checkbox"><span>Sygnalizacja świetlna</span></label>
                 <label class="check-item"><input type="checkbox"><span>Przedział dla zatrzymanych</span></label>
-                <label class="check-item"><input type="checkbox"><span>Zapasowe wyposażenie FP, Kamizelka odblaskowa</span></label>
+                <label class="check-item"><input type="checkbox"><span>Zapasowe wyposażenie funkcjonariusza</span></label>
+                <label class="check-item"><input type="checkbox"><span>Kamizelka odblaskowa</span></label>
               </div>
 
               <div class="info-panel">
                 <h4>Wyposażenie IFAK'u</h4>
                 <label class="check-item"><input type="checkbox"><span>Opatrunek hemostatyczny</span></label>
-                <label class="check-item"><input type="checkbox"><span>Bandaże, Gaza jałowa, Plastry</span></label>
+                <label class="check-item"><input type="checkbox"><span>Bandaże</span></label>
+                <label class="check-item"><input type="checkbox"><span>Gaza jałowa</span></label>
+                <label class="check-item"><input type="checkbox"><span>Plastry</span></label>
                 <label class="check-item"><input type="checkbox"><span>Folia NRC</span></label>
                 <label class="check-item"><input type="checkbox"><span>Staza taktyczna typu CAT</span></label>
                 <label class="check-item"><input type="checkbox"><span>Nożyczki medyczne</span></label>
@@ -1330,15 +1347,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
               <div class="info-panel">
                 <h4>Wyposażenie Torby R1</h4>
-                <label class="check-item"><input type="checkbox"><span>Nożyczki ratownicze, Rękawiczki nitrylowe</span></label>
-                <label class="check-item"><input type="checkbox"><span>Koc termiczny, Płachta foliowa na zwłoki</span></label>
+                <label class="check-item"><input type="checkbox"><span>Nożyczki ratownicze</span></label>
+                <label class="check-item"><input type="checkbox"><span>Rękawiczki nitrylowe</span></label>
+                <label class="check-item"><input type="checkbox"><span>Koc termiczny</span></label>
+                <label class="check-item"><input type="checkbox"><span>Płachta foliowa na zwłoki</span></label>
                 <label class="check-item"><input type="checkbox"><span>Środek do dezynfekcji ran</span></label>
-                <label class="check-item"><input type="checkbox"><span>Maska do sztucznego oddychania, krtaniowa, tlenowa</span></label>
-                <label class="check-item"><input type="checkbox"><span>Opatrunek hydrożelowy i hemostatyczny</span></label>
-                <label class="check-item"><input type="checkbox"><span>Bandaż niejałowy uciskowy, Plaster tkaninowy</span></label>
-                <label class="check-item"><input type="checkbox"><span>Kompresy jałowe z gazy, Gaza jałowa opatrunkowa</span></label>
-                <label class="check-item"><input type="checkbox"><span>Staza CAT, Nosze płachtowe, Szyna, Kołnierz</span></label>
-                <label class="check-item"><input type="checkbox"><span>Laryngoskop, Worek na amputowane części ciała</span></label>
+                <label class="check-item"><input type="checkbox"><span>Maska do sztucznego oddychania</span></label>
+                <label class="check-item"><input type="checkbox"><span>Maska krtaniowa</span></label>
+                <label class="check-item"><input type="checkbox"><span>Maska tlenowa</span></label>
+                <label class="check-item"><input type="checkbox"><span>Opatrunek hydrożelowy</span></label>
+                <label class="check-item"><input type="checkbox"><span>Opatrunek hemostatyczny</span></label>
+                <label class="check-item"><input type="checkbox"><span>Bandaż niejałowy uciskowy</span></label>
+                <label class="check-item"><input type="checkbox"><span>Plaster tkaninowy</span></label>
+                <label class="check-item"><input type="checkbox"><span>Kompresy jałowe z gazy</span></label>
+                <label class="check-item"><input type="checkbox"><span>Gaza jałowa opatrunkowa</span></label>
+                <label class="check-item"><input type="checkbox"><span>Staza taktyczna typu CAT</span></label>
+                <label class="check-item"><input type="checkbox"><span>Nosze płachtowe</span></label>
+                <label class="check-item"><input type="checkbox"><span>Szyna usztywniająca</span></label>
+                <label class="check-item"><input type="checkbox"><span>Kołnierz ratowniczy</span></label>
+                <label class="check-item"><input type="checkbox"><span>Laryngoskop</span></label>
+                <label class="check-item"><input type="checkbox"><span>Worek foliowy na amputowane części ciała</span></label>
               </div>
             </div>
           </div>
@@ -1382,7 +1410,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="callout-label">Odczytanie praw osobie zatrzymanej</span>
               </div>
               <div class="callout-text">
-                Jest Pan/Pani zatrzymany/a pod zarzutami popełnienia przestępstwa. Ma Pan/Pani prawo zachować milczenie, wszystko co Pan/Pani teraz powie może zostać lub zostanie wykorzystane w sądzie. Ma Pan/i prawo do adwokata, jeśli Pana/i na niego nie stać zostanie on przydzielony z urzędu, oraz do telefonu na okres nie dłuższy niż 2 min. Czy rozumie Pan/Pani swoje prawa.
+                Jest Pan/Pani zatrzymany/a pod zarzutami popełnienia przestępstwa. Ma Pan/Pani prawo zachować milczenie, wszystko co Pan/Pani teraz powie może zostać lub zostanie wykorzystane w sądzie. Ma Pan/i prawo do adwokata, jeśli Pana/i na niego nie stać zostanie on przydzielony z urzędu, oraz przywilej do telefonu na okres nie dłuższy niż 2 min. Czy rozumie Pan/Pani swoje prawa.
               </div>
             </div>
 
@@ -1426,13 +1454,13 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr>
                     <td><span class="code-pill">10-2</span></td>
                     <td>Potwierdzam</td>
-                    <td><span class="code-pill warn">10-50</span></td>
+                    <td><span class="code-pill">10-50</span></td>
                     <td>Kolizja/wypadek</td>
                   </tr>
                   <tr>
                     <td><span class="code-pill">10-3</span></td>
                     <td>Odmawiam/Neguję</td>
-                    <td><span class="code-pill urgent">10-71</span></td>
+                    <td><span class="code-pill">10-71</span></td>
                     <td>Strzały</td>
                   </tr>
                   <tr>
@@ -1450,11 +1478,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr>
                     <td><span class="code-pill">10-6</span></td>
                     <td>Zajęty</td>
-                    <td><span class="code-pill warn">10-80</span></td>
+                    <td><span class="code-pill">10-80</span></td>
                     <td>Rozpoczęcie pościgu</td>
                   </tr>
                   <tr>
-                    <td><span class="code-pill warn">10-8</span></td>
+                    <td><span class="code-pill">10-8</span></td>
                     <td>Potrzebne wsparcie</td>
                     <td><span class="code-pill">10-81</span></td>
                     <td>Pościg zakończony powodzeniem</td>
@@ -1474,17 +1502,17 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr>
                     <td><span class="code-pill">10-12</span></td>
                     <td>Teren czysty</td>
-                    <td><span class="code-pill urgent">10-90</span></td>
+                    <td><span class="code-pill">10-90</span></td>
                     <td>Napad na ...</td>
                   </tr>
                   <tr>
-                    <td><span class="code-pill urgent">10-13a</span></td>
+                    <td><span class="code-pill">10-13a</span></td>
                     <td>Ranny funkcjonariusz (Niebezpiecznie)</td>
                     <td><span class="code-pill">10-91</span></td>
                     <td>Włamanie</td>
                   </tr>
                   <tr>
-                    <td><span class="code-pill warn">10-13b</span></td>
+                    <td><span class="code-pill">10-13b</span></td>
                     <td>Ranny funkcjonariusz (Bezpiecznie)</td>
                     <td><span class="code-pill">10-92</span></td>
                     <td>Napaść na obywatela</td>
@@ -1492,11 +1520,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr>
                     <td><span class="code-pill">10-14</span></td>
                     <td>Ranny obywatel</td>
-                    <td><span class="code-pill warn">10-99</span></td>
+                    <td><span class="code-pill">10-99</span></td>
                     <td>Osoba poszukiwana</td>
                   </tr>
                   <tr>
-                    <td><span class="code-pill urgent">Code 0</span></td>
+                    <td><span class="code-pill">Code 0</span></td>
                     <td>Zagrożenie życia</td>
                     <td><span class="code-pill">Code 5CC</span></td>
                     <td>Odwołanie Code 5</td>
@@ -1510,25 +1538,25 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr>
                     <td><span class="code-pill">Code 2</span></td>
                     <td>Sygnały świetlne bez dźwiękowych</td>
-                    <td><span class="code-pill urgent">Code 6F</span></td>
+                    <td><span class="code-pill">Code 6F</span></td>
                     <td>Felony traffic stop</td>
                   </tr>
                   <tr>
-                    <td><span class="code-pill warn">Code 3</span></td>
+                    <td><span class="code-pill">Code 3</span></td>
                     <td>Sygnały świetlne i dźwiękowe</td>
-                    <td><span class="code-pill urgent">Code 7</span></td>
+                    <td><span class="code-pill">Code 7</span></td>
                     <td>Obywatel z bronią w ręku</td>
                   </tr>
                   <tr>
                     <td><span class="code-pill">Code 4</span></td>
                     <td>Zakończenie czynności</td>
-                    <td><span class="code-pill gold">Code 8</span></td>
+                    <td><span class="code-pill">Code 8</span></td>
                     <td>Odprawa na komendzie</td>
                   </tr>
                   <tr>
-                    <td><span class="code-pill warn">Code 5</span></td>
+                    <td><span class="code-pill">Code 5</span></td>
                     <td>Zakaz zbliżania się do jednostki</td>
-                    <td><span class="code-pill urgent">Code 100</span></td>
+                    <td><span class="code-pill">Code 100</span></td>
                     <td>Cisza na radiu</td>
                   </tr>
                   <tr>
@@ -1584,15 +1612,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="code-pill gold">USMS</span></td>
+                    <td><span class="code-pill">USMS</span></td>
                     <td>United States Marshal Service</td>
-                    <td><span class="code-pill urgent">Shots fired</span></td>
+                    <td><span class="code-pill">Shots fired</span></td>
                     <td>Oddane strzały z broni palnej</td>
                   </tr>
                   <tr>
                     <td><span class="code-pill">EMS</span></td>
                     <td>Emergency Medical Services</td>
-                    <td><span class="code-pill urgent">Officer down</span></td>
+                    <td><span class="code-pill">Officer down</span></td>
                     <td>Ranny funkcjonariusz</td>
                   </tr>
                   <tr>
@@ -1622,17 +1650,17 @@ document.addEventListener('DOMContentLoaded', () => {
                   <tr>
                     <td><span class="code-pill">ZKD</span></td>
                     <td>Zewnętrzna Komisja Dyscyplinarna</td>
-                    <td><span class="code-pill warn">Broń klasy C</span></td>
+                    <td><span class="code-pill">Broń klasy C</span></td>
                     <td>Broń automatyczna, półautomatyczna, długolufowa</td>
                   </tr>
                   <tr>
                     <td><span class="code-pill">NTS</span></td>
                     <td>Normal Traffic Stop - Zatrzymanie drogowe</td>
-                    <td><span class="code-pill urgent">Broń klasy D</span></td>
+                    <td><span class="code-pill">Broń klasy D</span></td>
                     <td>Ładunki pirotechniczne, z wyjątkiem fajerwerków</td>
                   </tr>
                   <tr>
-                    <td><span class="code-pill warn">FTS</span></td>
+                    <td><span class="code-pill">FTS</span></td>
                     <td>Felony Traffic Stop - Zatrzymanie drogowe podwyższonego ryzyka</td>
                     <td><span class="code-pill">HRO</span></td>
                     <td>Operator radiowy w operacjach powietrznych</td>
@@ -1738,7 +1766,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Jednostka szybkiego reagowania, wykorzystywana przede wszystkim w sytuacjach, gdy ścigany pojazd osiąga prędkość uniemożliwiającą skuteczne prowadzenie pościgu przy użyciu standardowego radiowozu. Wymagane jest ukończenie szkolenia SEU.</p>
               </div>
               <div class="info-panel">
-                <h4>KING <span class="code-pill warn">Jednostka nieoznakowana</span></h4>
+                <h4>KING <span class="code-pill">Jednostka nieoznakowana</span></h4>
                 <p>Nieoznakowana jednostka patrolowa wykorzystywana podczas działań, w których istotne jest zachowanie dyskrecji i element zaskoczenia. Poruszanie się tą jednostką jest możliwe wyłącznie za autoryzacją HC/CIDU podczas akcji.</p>
               </div>
               <div class="info-panel">
@@ -1750,7 +1778,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Pojazd o zwiększonej pojemności oraz odporności, przystosowany do bezpiecznego przewozu większych grup zatrzymanych do placówek penitencjarnych (DOC) po przeprowadzonych akcjach oraz przerzutu funkcjonariuszy. Wymagane szkolenie SOG – David.</p>
               </div>
               <div class="info-panel">
-                <h4>DAVID <span class="code-pill urgent">Jednostka opancerzona, szturmowa</span></h4>
+                <h4>DAVID <span class="code-pill">Jednostka opancerzona, szturmowa</span></h4>
                 <p>Ciężki pojazd taktyczny o wysokiej odporności balistycznej, przeznaczony do działań specjalistycznych dywizji SOG (odbijanie zakładników, realizacja niebezpiecznych nakazów aresztowania). Wymagane szkolenie SOG – David.</p>
               </div>
               <div class="info-panel">
@@ -1933,11 +1961,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <div class="grid-3">
               <div class="info-panel">
-                <h4>PIT <span class="code-pill warn">Do 70 MPH</span></h4>
+                <h4>PIT <span class="code-pill">Do 70 MPH</span></h4>
                 <p>Polega na uderzeniu radiowozem w okolice tylnej osi pojazdu w taki sposób, aby ścigany stracił kontrolę nad prowadzonym pojazdem, a następnie wpadł w poślizg.</p>
               </div>
               <div class="info-panel">
-                <h4>RAM <span class="code-pill warn">Do 70 MPH</span></h4>
+                <h4>RAM <span class="code-pill">Do 70 MPH</span></h4>
                 <p>Polega na uderzeniu cięższym i mocniej opancerzonym pojazdem w bok ściganego samochodu w taki sposób, aby go zniszczyć i uniemożliwić dalsze przemieszczanie.</p>
               </div>
               <div class="info-panel">
@@ -1975,7 +2003,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
               <div class="info-panel">
                 <h4>Postępowanie podczas transportu na komendę</h4>
-                <p>Otwieramy drzwi, pomagamy wsiąść oraz zapinamy pasy. Na radiu zgłaszamy to w taki sposób: <code>[Numer Odznaki] + [Ilość FP w radiowozie] status 7 z zatrzymanym na komendę Rockford</code>. Następnie przedstawiamy zatrzymanemu Prawa Mirandy.</p>
+                <p>Otwieramy drzwi, pomagamy wsiąść oraz zapinamy pasy. Na radiu zgłaszamy to w taki sposób: <code>[Patrol] status 7 z zatrzymanym na komendę Rockford</code>. Następnie przedstawiamy zatrzymanemu Prawa Mirandy.</p>
               </div>
               <div class="info-panel">
                 <h4>Postępowanie na komendzie</h4>
@@ -1993,13 +2021,335 @@ document.addEventListener('DOMContentLoaded', () => {
             <h2>SEKCJA 22: Procedury konwojowe</h2>
           </div>
           <div class="card-body">
-            <h3>Konwój organizujemy gdy zostaną spełnione dane warunki:</h3>
-            <ul class="tac-list">
-              <li>Minimum 30 miesięcy wyroku.</li>
-              <li>Minimum 5 funkcjonariuszy na służbie.</li>
-              <li>Osoba kompetentna do przeprowadzenia konwoju (stopień nie zawsze oznacza kompetencje).</li>
-              <li>Chęć zatrzymanego do konwoju.</li>
-            </ul>
+            <div class="grid-2">
+              <div class="info-panel">
+                <h4>Konwój organizujemy gdy zostaną spełnione dane warunki:</h4>
+                <ul class="tac-list">
+                  <li>Minimum 30 miesięcy wyroku.</li>
+                  <li>Minimum 5 funkcjonariuszy na służbie.</li>
+                  <li>Osoba kompetentna do przeprowadzenia konwoju (Stopień nie zawsze oznacza kompetencje).</li>
+                  <li>Chęć zatrzymanego do konwoju.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Przygotowanie konwoju</h4>
+                <ul class="tac-list">
+                  <li>Gdy zapadnie decyzja o konwojowaniu zatrzymanego, musi zostać wyznaczony SuperVisor całego konwoju, następnie zostaje przeprowadzony kod 8, na którym rozdzielamy funkcjonariuszy uczestniczących w konwoju.</li>
+                  <li>Każdy, kto zostaje wyznaczony na konwój, ma autoryzację na kamizelkę kuloodporną!</li>
+                  <li>Przed wyjazdem z terenu komendy osoba dowodząca powinna zorientować się, czy wszystkie jednostki są gotowe, po czym wydaje komendę „konwój rusza”.</li>
+                  <li>Konwój to poruszający się kod czarny — na każdy pojazd, który będzie próbował się do niego zbliżyć, z automatu nakładany jest kod czarny.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="info-panel">
+                <h4>Rozstawienie Jednostek</h4>
+                <ul class="tac-list">
+                  <li><strong>U1 - Adam:</strong> informowanie o trasie konwoju.</li>
+                  <li><strong>U2 - Adam Off-Road:</strong> osłanianie jednostki transportowej od przodu.</li>
+                  <li><strong>U3 - Queen:</strong> jednostka transportowa.</li>
+                  <li><strong>U4 - Adam Off-Road:</strong> osłanianie jednostki transportowej od tyłu.</li>
+                  <li><strong>U5 - Adam:</strong> informowanie o tym, co dzieje się za konwojem i w razie potrzeby trzymanie na odległość podejrzanych samochodów.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Przebieg konwoju</h4>
+                <ul class="tac-list">
+                  <li>W mieście maksymalna prędkość konwoju to <strong>80 km/h</strong>.</li>
+                  <li>Poza miastem maksymalna prędkość konwoju to <strong>100 km/h</strong>.</li>
+                  <li>Każda jednostka jedzie na kodzie 2, z wyjątkiem U2 i U4 (U1 i U5 w zależności od sytuacji powinny jechać na CODE 3).</li>
+                  <li>Po dojechaniu do Bolingbroke na teren więzienia wjeżdżają U3 i SV konwoju, reszta jednostek zostaje przed terenem więzienia w celu ubezpieczania.</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3>Formacje</h3>
+            <div class="grid-3">
+              <div class="info-panel">
+                <h4>Formacja - Kolumna (Podstawowa)</h4>
+                <p>Polega na otwieraniu i zamykaniu konwoju przez jednostki Adam Off-Road (najczęściej Ram TRX), pomiędzy nimi znajduje się jednostka transportująca (najczęściej Rumpo/Centurion), a przed nimi oraz za nimi znajdują się jednostki Adam informujące o trasie konwoju.</p>
+              </div>
+              <div class="info-panel">
+                <h4>Formacja - Szachownica</h4>
+                <p>Polega na rozstawieniu jednostek blisko siebie: U1 na czele, za nią U2 osłaniająca jednostkę Queen, następnie U3 transportująca zatrzymanego, za U3 jedzie U4 mająca zadanie osłony oraz U5 na końcu.</p>
+              </div>
+              <div class="info-panel">
+                <h4>Formacja - Tank</h4>
+                <p>Więźniarka (Rumpo/Centurion) jedzie pośrodku konwoju, po bokach jadą dwie jednostki Adam Off-Road (najczęściej Ram TRX), natomiast z przodu formacji jedzie jedna jednostka Edward, a z tyłu jedna jednostka Adam.</p>
+              </div>
+              <div class="info-panel">
+                <h4>Formacja - Diament</h4>
+                <p>Układ pojazdów w kształcie rombu (diamentu) stosowany w trakcie przemieszczania się kolumny, głównie w warunkach bojowych lub zagrożenia.</p>
+              </div>
+              <div class="info-panel">
+                <h4>Formacja - Dynamiczna</h4>
+                <p>Brak stałych pozycji — pojazdy w konwoju dynamicznie zmieniają pozycje wokół pojazdu eskortowanego, co znacznie utrudnia napastnikowi przewidzenie następnego ruchu operatorów.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="section-card" id="sec-23" data-cat="tactics">
+          <div class="card-header">
+            <h2>SEKCJA 23: Procedury podczas napadu</h2>
+          </div>
+          <div class="card-body">
+            <h3>Ogólne zasady</h3>
+            <p>W momencie dotarcia na miejsce napadu zadaniem funkcjonariuszy jest sprawdzenie miejsca napadu, zabezpieczenie tego terenu, a następnie wydzielenie supervisora akcji przez PWC (jeżeli nikt nie pełni tej funkcji, akcję przejmuje najwyższy obecny stopień). Następnie SuperVisor wyznacza negocjatora i następuje przystąpienie do negocjacji z napastnikami.</p>
+
+            <h3>Negocjacje</h3>
+            <p>Pierwszym krokiem jest wyznaczenie funkcjonariusza do negocjacji przez supervisora. Podchodząc do negocjacji, zachowujemy ostrożność poprzez ubezpieczenie oraz bezpośrednie analizowanie zagrożenia ze strony napastników jak i osób postronnych. Warunkiem posiadania broni palnej w ręce przez funkcjonariusza negocjującego podczas podchodzenia do napastników jest posiadanie broni palnej przez negocjatora agresorów. Gdy negocjator podejdzie do napastnika, informuje, że jest negocjatorem i chce rozwiązać sytuację pokojowo. Jeśli broń jest w ręku napastnika, każemy mu ją schować, inaczej zostanie nałożone na niego ostrzeżenie negocjatorskie. Następnie negocjator pyta, ilu jest napastników oraz ilu jest zakładników, sprawdza stan poszkodowanych, po czym informuje supervisora o sytuacji i zbiera żądania. Po podjęciu decyzji przez supervisora, które żądania zostają zaakceptowane, negocjator przekazuje informację, aby wypuścili zakładników (tak, aby wychodzili pojedynczo). Jeśli zakładnicy zostaną wypuszczeni, negocjator pyta, czy napastnicy są gotowi do odjazdu, przekazuje to supervisorowi, a na koniec informuje napastników, że mogą wejść do pojazdu oraz oczekiwać na zielone światło od funkcjonariuszy.</p>
+
+            <div class="grid-3">
+              <div class="info-panel">
+                <h4>Wytyczne negocjacji</h4>
+                <ul class="tac-list">
+                  <li>W przypadku agresywnego zachowania porywaczy SV poprzez negocjatora może nakładać ostrzeżenia (3 ostrzeżenia = zerwanie negocjacji).</li>
+                  <li>Za jednego zakładnika porywacze posiadają jedno żądanie.</li>
+                  <li>Porywacze nie mogą żądać wykluczenia z akcji danej jednostki albo funkcjonariusza ani żądać broni za zakładników.</li>
+                  <li>Maksymalny okup za jednego zakładnika wynosi <strong>20 000$</strong>.</li>
+                  <li>Odjazd porywaczy bez udzielenia im zielonego światła nakłada na nich automatycznie kod czarny.</li>
+                  <li>Negocjator, który udzieli zielonego światła na odjazd bez zgody SV, traci szkolenie negocjatorskie i jest zobowiązany do jego ponownego wykonania.</li>
+                  <li>Negocjatora wyznacza PWC albo SV. Wszystkie agresywne zachowania napastników negocjator ma obowiązek zgłosić SV.</li>
+                  <li>Komunikacja radiowa: negocjator do SV, SV do negocjatora.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Dozwolone żądania</h4>
+                <ul class="tac-list">
+                  <li><strong>Brak kolczatek:</strong> od 1 do 3 km – 1 zakładnik; powyżej 3 do 6 km – 2 zakładników; na cały pościg – 3 zakładników.</li>
+                  <li><strong>Kultura na drodze:</strong> dopóki napastnicy nie niszczą mienia, nie stwarzają zagrożenia, nie wjadą do miejsc zakazanych i nie zmienią samochodu, funkcjonariusze nie wykonują manewrów na ich pojeździe.</li>
+                  <li><strong>Brak kodów pościgowych (kod za czas pościgu):</strong> od 2 do 3 zakładników.</li>
+                  <li><strong>Brak helikoptera:</strong> do 2 km – 1 zakładnik; powyżej 2 km – 2 zakładników; na cały pościg – 3 zakładników.</li>
+                  <li><strong>Możliwość użycia jednej naprawy pojazdu:</strong> 2 zakładników.</li>
+                  <li><strong>Okup:</strong> za jednego zakładnika maksymalnie 20 000$.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Możliwość zerwania negocjacji</h4>
+                <ul class="tac-list">
+                  <li>Napastnicy są bardzo agresywni, nie rozumieją odmowy spełnienia niektórych żądań, a ich zachowanie zagraża życiu lub zdrowiu zakładników albo funkcjonariuszy.</li>
+                  <li>Kiedy zakładnicy byli torturowani.</li>
+                  <li>Kiedy zakładnikom stała się krzywda, a ich życie jest zagrożone.</li>
+                  <li>Kiedy dostaną 3 ostrzeżenia.</li>
+                  <li>Kiedy otworzą do nas bądź zakładników ogień (natychmiastowe zerwanie negocjacji).</li>
+                  <li>Kiedy spróbują uciec z miejsca negocjacji.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="section-card" id="sec-24" data-cat="comms">
+          <div class="card-header">
+            <h2>SEKCJA 24: Prawo Stanowe</h2>
+          </div>
+          <div class="card-body">
+            <div class="grid-2">
+              <div class="info-panel">
+                <h4>Informacje ogólne o stanie San Andreas</h4>
+                <ul class="tac-list">
+                  <li><strong>Godło San Andreas:</strong> bóbr.</li>
+                  <li><strong>Barwy stanowe:</strong> biały, jasnoniebieski, brązowy i zielony.</li>
+                  <li><strong>Gubernator:</strong> Richard Caldwell.</li>
+                  <li><strong>Burmistrz:</strong> Andre Roosvelet.</li>
+                  <li><strong>Zastępca Burmistrza:</strong> Eduardo De Medici.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Zasady kaucji i przekroczenia uprawnień wyroku</h4>
+                <ul class="tac-list">
+                  <li>Kaucja wynosi <strong>5 000$</strong> za jeden miesiąc. <strong>Kaucja ≠ grzywna.</strong></li>
+                  <li>W sytuacji, kiedy wyrok wychodzi powyżej danego szczebla, należy wezwać osobę uprawnioną (HC, Prokurator).</li>
+                  <li>Jeżeli takiej osoby nie ma, należy zatrzymać obywatela na areszt tymczasowy do momentu obecności osoby uprawnionej.</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3>Maksymalne wyroki miesięcy oraz grzywny</h3>
+            <div class="table-wrap">
+              <table class="tac-table">
+                <thead>
+                  <tr>
+                    <th>Paragraf</th>
+                    <th>Stanowisko</th>
+                    <th>Maksymalny wyrok i grzywna</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="code-pill">§ 1</span></td>
+                    <td>Funkcjonariusz służb mundurowych (LSPD, USMS)</td>
+                    <td>do 90 mies. i do $90 000</td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-pill">§ 2</span></td>
+                    <td>Zarząd służb mundurowych (LSPD, USMS)</td>
+                    <td>do 160 mies. i do $160 000</td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-pill">§ 3</span></td>
+                    <td>Prokurator</td>
+                    <td>od 200 do 400 mies. (najniższy stopień 100, najwyższy 400, pośrednie ustala DOJ) i do $400 000</td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-pill">§ 4</span></td>
+                    <td>Sędzia</td>
+                    <td>do 1000 mies. i do $600 000</td>
+                  </tr>
+                  <tr>
+                    <td><span class="code-pill">§ 5</span></td>
+                    <td>Gubernator, Zastępca Gubernatora, Burmistrz i Zastępca Burmistrza</td>
+                    <td>do 1200 mies. i do $1 500 000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="section-card" id="sec-25" data-cat="comms">
+          <div class="card-header">
+            <h2>SEKCJA 25: Narkotyki</h2>
+          </div>
+          <div class="card-body">
+            <h3>Miękkie</h3>
+            <p>Do miękkich narkotyków zalicza się środki, które nie są tak silnie uzależniające fizycznie. W tej grupie znajduje się wiele substancji, które, mimo że mogą być groźne dla zdrowia, nie wywołują tak silnego uzależnienia.</p>
+            <div class="grid-3">
+              <div class="info-panel">
+                <h4>Marihuana</h4>
+                <p>Susz pozyskiwany z roślin konopi (Cannabis), zawierający substancje psychoaktywne. Efekty fizyczne to wzrost tętna, trudności z oddychaniem, nudności, zaburzenia psychiczne obejmujące psychozę, halucynacje, paranoję, urojenia (szczególnie ksobne), czasem połączone z lękiem bądź paniką.</p>
+              </div>
+              <div class="info-panel">
+                <h4>Haszysz</h4>
+                <p>Substancja otrzymywana ze zlepionej i sprasowanej żywicy konopi indyjskich (Cannabis indica) lub konopi siewnych (Cannabis sativa). Podobnie jak marihuana, palony jest zazwyczaj z tytoniem w postaci ręcznie robionych papierosów (tzw. jointów).</p>
+              </div>
+              <div class="info-panel">
+                <h4>LSD</h4>
+                <p>Dietyloamid kwasu D-lizergowego. Jedna z najaktywniejszych substancji psychodelicznych o właściwościach halucynogennych i jedna z najmniej groźnych substancji psychoaktywnych. Może prowadzić do potęgowania odczuć, halucynacji, synestezji oraz trwałych zmian w strukturze połączeń między neuronami.</p>
+              </div>
+            </div>
+
+            <h3>Twarde</h3>
+            <p>Do twardych narkotyków zalicza się te środki, które silnie uzależniają fizycznie. W tej grupie znajduje się wiele substancji, które mogą być groźne dla zdrowia lub życia.</p>
+            <div class="grid-3">
+              <div class="info-panel">
+                <h4>Kodeina</h4>
+                <p>Metylomorfina, metylowa pochodna morfiny o silnym depresyjnym wpływie na ośrodkowy układ nerwowy. Ma działanie przeciwbólowe, wywołuje euforię, senność, błogą apatię, wprowadza w stan niewrażliwości na przykre doznania (szybciej się po niej biega).</p>
+              </div>
+              <div class="info-panel">
+                <h4>Ecstasy</h4>
+                <p>3,4-Metylenodioksymetamfetamina (MDMA). Główne efekty to otwartość, lekkie halucynacje, pobudzenie, euforia, empatia, intensyfikacja odbioru bodźców zewnętrznych, głębsze odczuwanie muzyki i ruchu, zmiana poczucia czasu oraz wzmocnienie odczuć związanych z dotykiem.</p>
+              </div>
+              <div class="info-panel">
+                <h4>Kokaina</h4>
+                <p>Organiczny związek chemiczny z grupy alkaloidów o szkielecie tropanu, pozyskiwany z liści krasnodrzewu pospolitego. Ma właściwości pobudzające, powoduje uczucie euforii, zmniejsza niepokój i zwiększa poczucie pewności siebie, po czym następuje okres złego samopoczucia skłaniający do kolejnej dawki.</p>
+              </div>
+              <div class="info-panel">
+                <h4>Heroina</h4>
+                <p>Półsyntetyczny opioid (acetylowa pochodna morfiny). W postaci czystej jest białą, sypką, bezwonną substancją o gorzkim smaku. Bardzo silny środek narkotyczny wywołujący euforię i błogą apatię, prowadzący do uzależnienia psychicznego i fizycznego (przyjmowana dożylnie albo wziewnie).</p>
+              </div>
+              <div class="info-panel">
+                <h4>Metamfetamina</h4>
+                <p>N-metylowa pochodna amfetaminy. Stosowana jako środek odurzający oraz lek na ADHD i otyłość. Działanie psychotropowe zbliżone do amfetaminy, jednak działa dłużej, stan po spożyciu jest dużo intensywniejszy i substancja jest bardziej toksyczna.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="section-card" id="sec-26" data-cat="tactics">
+          <div class="card-header">
+            <h2>SEKCJA 26: Konwoje i sekcja więzienna</h2>
+          </div>
+          <div class="card-body">
+            <p>Każda osoba doprowadzona do jednostki podlega obowiązkowej identyfikacji. Funkcjonariusz dokonuje: weryfikacji danych osobowych, kontroli dokumentacji, przeszukania osoby. Wszelkie przedmioty niedozwolone podlegają zabezpieczeniu. Osadzonemu nadaje się numer identyfikacyjny i przydziela do wyznaczonej celi.</p>
+
+            <div class="grid-3">
+              <div class="info-panel">
+                <h4>Obowiązki funkcjonariusza</h4>
+                <ul class="tac-list">
+                  <li>Zachowanie pełnego profesjonalizmu podczas wykonywania obowiązków służbowych.</li>
+                  <li>Działanie zgodnie z procedurami i regulaminem jednostki, wykonywanie poleceń przełożonych bez zbędnej zwłoki, stała kontrola nad przydzielonym sektorem.</li>
+                  <li>Reagowanie na wszelkie przejawy naruszenia porządku.</li>
+                  <li>Regularne przeprowadzanie kontroli cel oraz stanu osadzonych.</li>
+                  <li>Natychmiastowe zgłaszanie wszelkich incydentów.</li>
+                  <li>Utrzymywanie sprawności sprzętu służbowego oraz zachowanie czujności i gotowości do interwencji.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Funkcjonariuszowi zabrania się</h4>
+                <ul class="tac-list">
+                  <li>Nadużywania uprawnień służbowych.</li>
+                  <li>Stosowania przemocy bez wyraźnego uzasadnienia.</li>
+                  <li>Wchodzenia w nieformalne relacje z osadzonym.</li>
+                  <li>Przekazywania informacji osobom nieuprawnionym.</li>
+                  <li><strong>Użycie ŚPB:</strong> Podlega niezwłocznemu zgłoszeniu funkcjonariuszowi o najwyższym stopniu pełniącemu służbę w danym momencie.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Funkcjonariusz zobowiązany jest do</h4>
+                <ul class="tac-list">
+                  <li>Utrzymywania kultury osobistej wobec współpracowników oraz osadzonych.</li>
+                  <li>Wydawania jasnych i zrozumiałych poleceń.</li>
+                  <li>Działania w sposób zapewniający bezpieczeństwo jednostki.</li>
+                </ul>
+              </div>
+            </div>
+
+            <h3>Procedury konwojowe jednostki penitencjarnej i podział ról</h3>
+            <div class="grid-2">
+              <div class="info-panel">
+                <h4>Przygotowanie i zasady konwoju</h4>
+                <ul class="tac-list">
+                  <li>Sprawdzenie stanu technicznego pojazdów, sprawności łączności radiowej, wyposażenia służbowego, potwierdzenie trasy przejazdu oraz punktów ewentualnej ewakuacji.</li>
+                  <li>Zabezpieczenie osadzonego w sposób uniemożliwiający ucieczkę z pojazdu lub naruszenie porządku.</li>
+                  <li>Minimalny skład konwoju: jeden pojazd transportowy i co najmniej dwa pojazdy eskorty (przód i tył): U1 rozpoznawczo-eskortowy, U2 transportowy z zatrzymanym, U3 zabezpieczający (przy większej liczbie jednostek szyk „szachownica”: U1 Rozpoznanie, U2 Eskorta, U3 Transport, U4 Eskorta, U5 Rozpoznanie i ochrona szyku).</li>
+                  <li>Obowiązek utrzymywania stałych dystansów, stałej łączności radiowej i meldowania zmian sytuacji drogowej.</li>
+                  <li>Zakaz zatrzymań lub zjazdu z trasy bez wyraźnego polecenia SV konwoju (nawet po utracie łączności radiowej należy kontynuować konwój według wytyczonej trasy).</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Podział ról, struktura i współdziałanie</h4>
+                <ul class="tac-list">
+                  <li><strong>Kierowca:</strong> Prowadzi pojazd, utrzymuje szyk i prędkość, nie zmienia trasy bez rozkazu, w zagrożeniu stabilizuje pojazd i chroni transport.</li>
+                  <li><strong>Eskorta:</strong> Zabezpiecza konwój z przodu i tyłu, kontroluje otoczenie, reaguje na bezpośrednie zagrożenia, stanowi pierwszą linię obrony.</li>
+                  <li><strong>Overwatch:</strong> Prowadzi obserwację z dystansu, wykrywa zagrożenia, raportuje i wspiera informacyjnie działania.</li>
+                  <li><strong>Układ:</strong> Overwatch (jeśli jest) → Escort front → Transport → Escort rear. Dowodzenie: jeden wyznaczony funkcjonariusz.</li>
+                  <li><strong>Priorytety:</strong> Ochrona osadzonego, ciągłość konwoju, neutralizacja zagrożeń. Naruszenie roli = naruszenie dyscypliny (SOP obowiązuje wszystkich uczestników).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="info-panel">
+                <h4>Atak na konwój</h4>
+                <ul class="tac-list">
+                  <li>Traktowany jako zdarzenie najwyższego priorytetu operacyjnego — natychmiastowe podjęcie działań obronnych i zgłoszenie drogą radiową (lokalizacja i charakter zagrożenia).</li>
+                  <li>Działania koordynuje funkcjonariusz najwyższej rangi w celu ochrony życia FP i osadzonego.</li>
+                  <li>Natychmiastowe wyznaczenie strefy zabezpieczenia obejmującej pojazd transportowy, obszar wokół konwoju i linie podejścia napastników (zakaz opuszczania pozycji bez zgody dowodzącego).</li>
+                  <li>Po ustaniu zagrożenia utrzymanie zabezpieczenia do przybycia wsparcia, sprawdzenie stanu FP oraz osadzonego i sporządzenie szczegółowego raportu służbowego zgodnie z SOP.</li>
+                </ul>
+              </div>
+
+              <div class="info-panel">
+                <h4>Więzienie</h4>
+                <ul class="tac-list">
+                  <li>Po dotarciu do więzienia przeprowadzenie rozpoznania otoczenia, zabezpieczenie terenu przed wprowadzeniem osadzonego oraz wyznaczenie strefy wykluczenia (nieupoważnionym wstęp wzbroniony).</li>
+                  <li>Po przekazaniu skazanego zwrócenie uwagi na zachowanie osadzonych, osobę pierwszego kontaktu oraz pierwszą wykonaną czynność przez skazanego.</li>
+                  <li>Po zakończeniu czynności powrót do obowiązków lub (decyzją SV akcji) pozostanie na terenie więzienia w celu zapewnienia dodatkowych środków bezpieczeństwa.</li>
+                  <li>Każdorazowa próba ucieczki lub podejrzane zachowanie osadzonego musi być wychwycone, sprawdzone i zneutralizowane w jak najkrótszym czasie.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -2009,7 +2359,11 @@ document.addEventListener('DOMContentLoaded', () => {
 </main>
 
 <footer class="site-footer">
-  USMS — Kompendium Wiedzy &nbsp;·&nbsp; Made by <strong>vex$</strong> and <strong>pref1ll</strong>.
+  <div>USMS — Kompendium Wiedzy &nbsp;·&nbsp; Made by <strong>vex$</strong> and <strong>pref1ll</strong>.</div>
+  <div class="footer-legal">
+    „Dokument został utworzony na potrzeby serwera WaitRP”<br>
+    Wszelkie prawa do powyższego dokumentu są zastrzeżone przez autorów. Dokument lub jego część nie może być kopiowana, rozpowszechniana, publikowana ani wykorzystywana w jakiejkolwiek formie, zarówno w całości, jak i we fragmentach, bez uprzedniej pisemnej zgody autorów: <strong>Grz4siek, tomonto., 46w_.</strong>
+  </div>
 </footer>
 
 <button type="button" class="backtop" id="backTopBtn" title="Wróć na górę">↑ Góra</button>
